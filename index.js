@@ -61,7 +61,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'contribution',
-            message: 'Provide usage contribution guidelines for your project (Required)',
+            message: 'Provide contribution guidelines for your project (Required)',
             validate: nameInput => {
               if (nameInput) {
                 return true;
@@ -125,7 +125,7 @@ function writeToFile(fileName, data) {
     fs.writeFile('./'+ fileName, data, err => {
         if (err) throw new Error(err);
         
-        console.log('Page created! Check out index.html in this directory to see it!');
+        console.log('README created! Check out the root of this directory to see it!');
     });
 }
 
@@ -138,13 +138,7 @@ function init() {
         var stringOutput = generateMarkdown(data);
         writeToFile('SAMPLEREADME.md', stringOutput);
     })
-    // .then(writeToFile(README.md, data))
 
-    // fs.writeFile('./README.md', pageHTML, err => {
-    //     //   if (err) throw new Error(err);
-    
-    //     //   console.log('Page created! Check out index.html in this directory to see it!');
-    //     // });
 }
 
 // Function call to initialize app
