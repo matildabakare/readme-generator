@@ -120,15 +120,31 @@ const questions = () => {
 };
 
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile('./'+ fileName, data, err => {
+        if (err) throw new Error(err);
+        
+        console.log('Page created! Check out index.html in this directory to see it!');
+    });
+}
 
-// }
+
 
 // TODO: Create a function to initialize app
 function init() {
     questions()
-    .then(writeToFile(README.md, data))
+    .then((data) => {
+        var stringOutput = generateMarkdown(data);
+        writeToFile('SAMPLEREADME.md', stringOutput);
+    })
+    // .then(writeToFile(README.md, data))
+
+    // fs.writeFile('./README.md', pageHTML, err => {
+    //     //   if (err) throw new Error(err);
+    
+    //     //   console.log('Page created! Check out index.html in this directory to see it!');
+    //     // });
 }
 
 // Function call to initialize app
