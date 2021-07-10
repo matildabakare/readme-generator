@@ -13,11 +13,11 @@ A command-line applicatuon that allows the user to quickly and easily generate a
 The application needs to be invoked by using the 'node index.js' command in the command line.
 
 
-## Website
-https://matildabakare.github.io/work-day-scheduler/
+## Github
+https://github.com/matildabakare/readme-generator
 
-## Screenshots
-![image] (./assets/images/website-image.png)
+## Video Showing App Functionality
+https://drive.google.com/file/d/1yCIre2_d2PzMPffYCtzN044ElNV5PS1r/view
 
 
 ## Contribution

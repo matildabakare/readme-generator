@@ -100,10 +100,7 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  ## License
-
   ${renderLicenseSection(data.license)}
-
   ## Contributing
   ${data.contribution}
   
